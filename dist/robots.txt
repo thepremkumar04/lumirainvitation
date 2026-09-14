@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://lumirainvitations.vercel.app/sitemap.xml

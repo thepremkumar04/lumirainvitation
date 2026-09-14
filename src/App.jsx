@@ -1,3 +1,8 @@
+import DigitalWeddingInvitations from "./pages/DigitalWeddingInvitations";
+import WeddingWebsites from "./pages/WeddingWebsites";  
+import TirupatiWeddingInvitations from "./pages/TirupatiWeddingInvitations";
+
+
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import NotFound from "./pages/NotFound";
@@ -447,16 +452,47 @@ function App() {
 
   useEffect(() => {
     const titles = {
-      "/": "Luxury Digital Wedding Invitations | Lumira",
+      "/":
+        "Luxury Digital Wedding Invitations & Wedding Websites | Lumira",
+
+      "/digital-wedding-invitations":
+        "Digital Wedding Invitations | Luxury Online Wedding Cards | Lumira",
+
+      "/wedding-websites":
+        "Wedding Websites | Interactive Wedding Websites | Lumira",
+
+      "/wedding-invitations-tirupati":
+        "Wedding Invitations in Tirupati | Digital Wedding Invitations | Lumira",
+
       "/privacy": "Privacy Policy | Lumira",
+
       "/terms": "Terms & Conditions | Lumira",
     };
-    document.title = titles[currentPath] || "Page Not Found | Lumira";
+
+    document.title =
+      titles[currentPath] || "Page Not Found | Lumira";
   }, [currentPath]);
 
   if (currentPath === "/privacy") return <Privacy />;
+
   if (currentPath === "/terms") return <Terms />;
-  if (currentPath !== "/") return <NotFound />;
+
+  if (currentPath === "/digital-wedding-invitations") {
+    return <DigitalWeddingInvitations />;
+  }
+
+  if (currentPath === "/wedding-websites") {
+    return <WeddingWebsites />;
+  }
+
+  if (currentPath === "/wedding-invitations-tirupati") {
+    return <TirupatiWeddingInvitations />;
+  }
+
+  if (currentPath !== "/") {
+    return <NotFound />;
+  }
+
   return <LandingPage />;
 }
 

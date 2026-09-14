@@ -1,0 +1,365 @@
+.seo-page {
+  min-height: 100vh;
+  background: #fbf9f4;
+  color: #1d1b18;
+}
+
+.seo-header {
+  height: 78px;
+  padding: 0 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(29, 27, 24, 0.1);
+  position: relative;
+  z-index: 10;
+  background: rgba(251, 249, 244, 0.92);
+  backdrop-filter: blur(16px);
+}
+
+.seo-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: inherit;
+  text-decoration: none;
+  font-size: 14px;
+  letter-spacing: 0.18em;
+  font-weight: 600;
+}
+
+.seo-brand-mark {
+  width: 32px;
+  height: 32px;
+  border: 1px solid currentColor;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-family: Georgia, serif;
+  font-size: 18px;
+  letter-spacing: 0;
+}
+
+.seo-header nav {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.seo-header nav a {
+  color: inherit;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.seo-nav-cta {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  border: 1px solid rgba(29, 27, 24, 0.25);
+  padding: 11px 15px;
+}
+
+.seo-hero {
+  min-height: 72vh;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: 90px 7%;
+  background:
+    radial-gradient(circle at 50% 20%, rgba(212, 181, 155, 0.2), transparent 38%),
+    #fbf9f4;
+}
+
+.seo-hero-content {
+  max-width: 900px;
+}
+
+.seo-eyebrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+  opacity: 0.65;
+}
+
+.seo-hero h1 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(48px, 7vw, 94px);
+  line-height: 0.98;
+  font-weight: 400;
+  letter-spacing: -0.045em;
+  margin: 0;
+}
+
+.seo-hero h1 em {
+  font-style: italic;
+}
+
+.seo-hero-text {
+  max-width: 650px;
+  margin: 32px auto 0;
+  font-size: 18px;
+  line-height: 1.7;
+  opacity: 0.72;
+}
+
+.seo-actions {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 34px;
+}
+
+.seo-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-size: 13px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.seo-button:hover {
+  transform: translateY(-2px);
+}
+
+.seo-button-primary {
+  background: #1d1b18;
+  color: #fff;
+}
+
+.seo-button-secondary {
+  border: 1px solid rgba(29, 27, 24, 0.25);
+  color: #1d1b18;
+}
+
+.seo-intro {
+  max-width: 850px;
+  margin: auto;
+  padding: 120px 7%;
+  text-align: center;
+}
+
+.seo-intro h2,
+.seo-section-heading h2,
+.seo-process h2,
+.seo-faq h2,
+.seo-final-cta h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 400;
+  font-size: clamp(38px, 5vw, 68px);
+  line-height: 1;
+  letter-spacing: -0.04em;
+  margin: 0;
+}
+
+.seo-intro h2 span,
+.seo-section-heading h2 span,
+.seo-process h2 span,
+.seo-faq h2 span {
+  font-style: italic;
+}
+
+.seo-intro > p:last-child {
+  max-width: 650px;
+  margin: 28px auto 0;
+  line-height: 1.8;
+  opacity: 0.68;
+}
+
+.seo-feature-section {
+  padding: 110px 7%;
+  background: #efebe3;
+}
+
+.seo-section-heading {
+  max-width: 700px;
+  margin-bottom: 55px;
+}
+
+.seo-section-heading .seo-eyebrow,
+.seo-process .seo-eyebrow,
+.seo-faq .seo-eyebrow {
+  justify-content: flex-start;
+}
+
+.seo-feature-grid {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: rgba(29, 27, 24, 0.15);
+}
+
+.seo-feature-card {
+  background: #efebe3;
+  padding: 42px 34px;
+  min-height: 210px;
+}
+
+.seo-feature-icon {
+  margin-bottom: 28px;
+  opacity: 0.65;
+}
+
+.seo-feature-card h3 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 24px;
+  font-weight: 400;
+  margin: 0 0 12px;
+}
+
+.seo-feature-card p {
+  line-height: 1.7;
+  opacity: 0.65;
+  margin: 0;
+}
+
+.seo-process {
+  padding: 120px 7%;
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 90px;
+  align-items: start;
+}
+
+.seo-steps {
+  display: grid;
+  gap: 0;
+}
+
+.seo-steps > div {
+  padding: 30px 0;
+  border-top: 1px solid rgba(29, 27, 24, 0.15);
+}
+
+.seo-steps strong {
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  opacity: 0.5;
+}
+
+.seo-steps h3 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 27px;
+  font-weight: 400;
+  margin: 10px 0;
+}
+
+.seo-steps p {
+  margin: 0;
+  line-height: 1.7;
+  opacity: 0.65;
+}
+
+.seo-faq {
+  padding: 110px 7%;
+  background: #efebe3;
+}
+
+.seo-faq-list {
+  max-width: 900px;
+  margin-top: 50px;
+}
+
+.seo-faq details {
+  border-top: 1px solid rgba(29, 27, 24, 0.18);
+  padding: 22px 0;
+}
+
+.seo-faq details:last-child {
+  border-bottom: 1px solid rgba(29, 27, 24, 0.18);
+}
+
+.seo-faq summary {
+  cursor: pointer;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 21px;
+}
+
+.seo-faq details p {
+  max-width: 750px;
+  line-height: 1.7;
+  opacity: 0.65;
+  margin: 16px 0 0;
+}
+
+.seo-final-cta {
+  text-align: center;
+  padding: 130px 7%;
+}
+
+.seo-final-cta h2 {
+  max-width: 900px;
+  margin: auto;
+}
+
+.seo-final-cta h2 em {
+  font-style: italic;
+}
+
+.seo-final-cta > p:not(.seo-eyebrow) {
+  max-width: 600px;
+  margin: 28px auto 0;
+  line-height: 1.7;
+  opacity: 0.68;
+}
+
+.seo-final-cta .seo-actions {
+  margin-top: 32px;
+}
+
+@media (max-width: 800px) {
+  .seo-header {
+    padding: 0 20px;
+  }
+
+  .seo-header nav a:not(.seo-nav-cta) {
+    display: none;
+  }
+
+  .seo-hero {
+    min-height: 70vh;
+    padding: 70px 24px;
+  }
+
+  .seo-hero h1 {
+    font-size: clamp(46px, 14vw, 70px);
+  }
+
+  .seo-hero-text {
+    font-size: 16px;
+  }
+
+  .seo-intro,
+  .seo-feature-section,
+  .seo-process,
+  .seo-faq,
+  .seo-final-cta {
+    padding: 80px 24px;
+  }
+
+  .seo-feature-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .seo-process {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .seo-section-heading h2,
+  .seo-process h2,
+  .seo-faq h2,
+  .seo-final-cta h2 {
+    font-size: 48px;
+  }
+}
